@@ -1,0 +1,136 @@
+@media (max-width: 1200px) {
+    body {
+        overflow: visible;
+        background-color: #ffffff;
+    }
+
+    main::after {
+        top: 0;
+        position: absolute;
+        min-height: 52%;
+        background: linear-gradient(180deg, #ffffff00 80%, rgb(255, 255, 255) 95%) no-repeat;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .PAGE.SELECT video {
+        object-position: right;
+        height: 50%;
+        object-fit: cover;
+        background-color: #ffffff;
+    }
+
+    .HOME {
+        margin-top: -80px;
+        padding-top: 0px;
+        position: relative;
+        min-height: 90vh;
+        max-width: 90vw;
+        padding-right: 5%;
+        justify-content: flex-start;
+        transform: scale(0.9);
+        animation: home-to-rigth 1s;
+    }
+
+    @keyframes home-to-rigth {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(0.9);
+        }
+    }
+
+    .KITODAN h2 {
+        font-size: 46px;
+    }
+
+    .KITODAN h3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .KITODAN p {
+        max-width: 85vw;
+        font-size: 14px;
+    }
+
+    .SKILLS h3 {
+        font-size: 18px;
+    }
+
+    .progress-bar {
+        background: #0179ac1f;
+        max-width: 85vw;
+        height: 5px;
+        border-radius: 5px;
+    }
+
+    .progress-bar div {
+        height: 5px;
+        border-radius: 5px;
+        width: 0%;
+    }
+
+    .whatsappme button {
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .whatsappme h3 {
+        font-size: 22px;
+    }
+
+    #whatsapp-btn {
+        max-width: 85vw;
+        height: 80px;
+        color: white;
+        border: none;
+        align-items: center;
+    }
+
+    #whatsapp-btn img {
+        height: 40px;
+    }
+
+    .social-logos {
+        margin-top: 60px;
+        margin-bottom: 50px;
+        display: inline-block;
+    }
+
+    .social-logos img {
+        width: 36px;
+        height: 36px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .whatsappme button {
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .whatsappme h3 {
+        font-size: 18px;
+    }
+
+    #whatsapp-btn {
+        width: 85vw;
+        height: 80px;
+        color: white;
+        border: none;
+        align-items: center;
+    }
+
+    #whatsapp-btn img {
+        height: 30px;
+    }
+}

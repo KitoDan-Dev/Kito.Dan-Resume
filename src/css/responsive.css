@@ -7,13 +7,14 @@
     main::after {
         top: 0;
         position: absolute;
-        min-height: 50%;
+        min-height: 65%;
         background: linear-gradient(180deg, #ffffff00 50%, rgb(255, 255, 255) 95%) no-repeat;
         margin: 0px;
         padding: 0px;
     }
 
     .PAGE.SELECT video {
+        top: 0;
         object-position: right;
         height: 50%;
         object-fit: cover;
@@ -54,7 +55,7 @@
     }
 
     .KITODAN h3 {
-        margin-top: 10px;
+        margin-top: 30px;
         font-size: 18px;
     }
 

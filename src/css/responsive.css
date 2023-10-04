@@ -6,6 +6,7 @@
 
     main::after {
         top: 0;
+        position: absolute;
         object-position: cover;
         min-height: 50vh;
         height: 50%;

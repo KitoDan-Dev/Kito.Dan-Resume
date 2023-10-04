@@ -6,9 +6,10 @@
 
     main::after {
         top: 0;
-        position: absolute;
-        min-height: 65%;
-        background: linear-gradient(180deg, #ffffff00 50%, rgb(255, 255, 255) 95%) no-repeat;
+        object-position: cover;
+        min-height: 50vh;
+        height: 50%;
+        background: linear-gradient(180deg, #ffffff00 60%, rgb(255, 255, 255) 95%) no-repeat;
         margin: 0px;
         padding: 0px;
     }

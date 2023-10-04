@@ -21,7 +21,7 @@
     }
 
     .HOME {
-        margin-top: -80px;
+        background-color: white;
         padding-top: 0px;
         position: relative;
         min-height: 90vh;
@@ -43,8 +43,13 @@
         }
     }
 
-    .KITODAN h2 {
+    .KITODAN h1 {
         font-size: 46px;
+    }
+
+    .KITODAN h2 {
+        font-size: 20px;
+        margin-top: -12px;
     }
 
     .KITODAN h3 {
@@ -60,9 +65,9 @@
     .SKILLS h3 {
         font-size: 18px;
     }
-
+    
     .progress-bar {
-        background: #0179ac1f;
+        background: #4db36c2a;
         max-width: 85vw;
         height: 5px;
         border-radius: 5px;

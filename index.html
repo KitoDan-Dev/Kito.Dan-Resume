@@ -3,24 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0">
     <title>KITO.DAN</title>
 
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style1.css">
+    <link rel="stylesheet" href="./src/css/style2.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/responsive2.css">
+    <link rel="stylesheet" href="./src/css/3dstyle.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poller+One&family=Poppins&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main class="PAGES">
-        <div class="MENU"></div>
-        <div class="PAGE SELECT">
+    <main class="ALLPAGES">
+        <div class="PAGE1" id="PAGE1">
             <video muted autoplay loop class="video">
-                <source src="./src/imagens/MOKUP FOR SITE.mp4" type="video/mp4" alt="KITO.DAN VIDEO">
+                <source src="./src/images/MOKUP FOR SITE.mp4" type="video/mp4" alt="KITO.DAN VIDEO">
             </video>
             <div class="HOME">
                 <div class="KITODAN">
@@ -28,11 +30,9 @@
                     <h2>MOTION DESIGNER</h2>
                     <div class="about-me">
                         <h3>@About me</h3>
-                        <p>Hi there, I'm Danilo Brito, a <span style="color:#4DB36B;"><b>MOTION DESIGNER</b></span> with more them 6 years of
-                            experience in the field, skilled in Adobe After Effects, Illustrator, Blender3D,
-                            Photoshop and others,
-                            and I
-                            have a keen eye for detail and a deep understanding of animation principles. I'm passionate
+                        <p>Hi there, I'm Danilo Brito, a Motion Designer with more them 6 years of
+                            experience in the field, skilled in 2D and 3D animations,
+                            with a keen eye for detail and a deep understanding of animation principles. I'm passionate
                             about
                             creating visually stunning and effective designs that capture the attention of audiences and
                             deliver
@@ -72,53 +72,156 @@
                         </div>
                     </div>
                 </div>
+                <div class="forms">
+                    <form id="myForm">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="company">Company:</label>
+                        <input type="text" id="company" name="company">
+                        <div class="whatsappme">
+                            <button type="submit" id="whatsapp-btn">
+                                <img src="./src/images/whatsapp_icon.png" alt="Whatsapp Icon">
+                                <h3>
+                                    Don't waste time, let's do it!!
+                                </h3>
+                            </button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
                 <div class="buttons">
-                    <div class="whatsappme">
-                        <a href="https://wa.me/5562982032552">
-                        <button id="whatsapp-btn">
-                            <img src="./src/imagens/whatsapp_icon.png" alt="Whatsapp Icon">
-                            <h3>
-                                Don't waste time, let's start!!
-                            </h3>
-                        </button>
-                        </a>
-                    </div>
-                    <h4>My portfolio and more about me.</h4>
+                    <h4>More about me.</h4>
                     <ul class="social-logos">
                         <li>
-                            <a href="https://www.behance.net/kitodan">
+                            <a href="https://www.behance.net/kitodan?log_shim_removal=1">
                                 <button id="behance-btn">
-                                    <img src="./src/imagens/behance_square_icon.png" alt="Behance logo">
+                                    <img src="./src/images/behance_square_icon.png" alt="Behance Logo">
                                 </button>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/kitodan/">
                                 <button id="linkedin-btn">
-                                    <img src="./src/imagens/linkedin_square_icon.png" alt="Linkedin Logo">
+                                    <img src="./src/images/linkedin_square_icon.png" alt="Linkedin Logo">
+                                </button>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="https://www.instagram.com/kito.dan/">
+                                <button id="instagram-btn">
+                                    <img src="./src/images/instagram_square_icon.png" alt="Instagram Logo">
+                                </button>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="PAGE2" id="PAGE2">
+            <div id="bgblue" class="bgblue">
+                <img src="./src/images/BG_BLUE.png" alt="Transparent BG">
+            </div>
+            <div class="HOME2">
+                <div class="KITODAN2">
+                    <h1>Kito.Dan</h1>
+                    <h2>FRONT-END DEVELOPER</h2>
+                    <div class="about-me">
+                        <h3>@About me</h3>
+                        <p>In addition to my experience in motion design, I've also been working in Front-end
+                            development. I've honed my skills in HTML, CSS, JavaScript, and I'm passionate about
+                            creating user-friendly, intuitive interfaces that are both visually appealing and highly
+                            functional.
+                        </p>
+                    </div>
+                </div>
+                <div class="SKILLS2">
+                    <h3>@My Skills</h3>
+                    <div class="countainer">
+                        <div class="skill2">
+                            <h4>HTML</h4>
+                            <div class="progress-bar2">
+                                <div class="html1">
+                                    <div class="html2"></div>
+                                </div>
+                            </div>
+                            <h4>CSS</h4>
+                            <div class="progress-bar2">
+                                <div class="css1">
+                                    <div class="css2"></div>
+                                </div>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="progress-bar2">
+                                <div class="javascript1">
+                                    <div class="javascript2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forms2">
+                    <form id="myForm2">
+                        <label for="name2">Full Name:</label>
+                        <input type="text" id="name2" name="name2">
+                        <label for="company2">Company:</label>
+                        <input type="text" id="company2" name="company2">
+                        <div class="whatsappme2">
+                            <button type="submit" id="whatsapp-btn">
+                                <img src="./src/images/whatsapp_icon.png" alt="Whatsapp Icon">
+                                <h3>
+                                    Don't waste time, let's do it!!
+                                </h3>
+                            </button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="buttons2">
+                    <h4>More about me.</h4>
+                    <ul class="social-logos">
+                        <li>
+                            <a href="https://github.com/KitoDan-Dev">
+                                <button id="github-btn">
+                                    <img src="./src/images/github_square_icon_cian.png" alt="Github Logo">
                                 </button>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/KitoDan-Dev">
-                                <button id="github-btn">
-                                    <img src="./src/imagens/github_square_icon.png" alt="Github Logo">
+                            <a href="https://www.linkedin.com/in/kitodan/">
+                                <button id="linkedin-btn">
+                                    <img src="./src/images/linkedin_square_icon_cian.png" alt="Linkedin Logo">
                                 </button>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/kito.dan/">
                                 <button id="instagram-btn">
-                                    <img src="./src/imagens/instagram_square_icon.png" alt="Instagram Logo">
+                                    <img src="./src/images/instagram_square_icon_cian.png" alt="Instagram Logo">
                                 </button>
                             </a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
-
+        </div>
+        <div class="bottonchange">
+            <input type="checkbox" id="MotionOrDev" nome="MotionOrDev" />
+            <label for="MotionOrDev"></label>
+            <div class="area" id="area">
+                <h5 id="changearea">
+                    < change area
+                </h5>
+            </div>
+        </div>
     </main>
+
+    <script type="module" src="./src/js/three.js"></script>
+    <script type="module" src="./src/js/script.js"></script>
+
+    <script src="./src/js/wppmensage.js"></script>
+    <script src="./src/js/changepage.js"></script>
 </body>
 
 </html>

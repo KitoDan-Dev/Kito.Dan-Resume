@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottonchange {
+    top: 0;
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 1%;
+    display: flex;
+    max-width: 580px;
+    z-index: 2;
+    transform: scale(0.9);
+    animation: home-to-rigth 1s;
+    
+}
+
+.bottonchange label {
+    width: 150px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #4db36c8e;
+    box-shadow: inset 0px -5px 15px rgba(0, 0, 0, 0.1), inset 0px 5px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bottonchange label:hover {
+    border: 1px solid;
+    border-color: #4DB36B;
+}
+
+.bottonchange input:checked+label {
+    background-color: #0f3b59;
+    box-shadow: inset 0px -5px 15px rgba(0, 0, 0, 0.19), inset 0px 5px 15px rgba(255, 255, 255, 0.206);
+}
+
+.bottonchange label::after {
+    content: "motion";
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: center;
+    width: 75px;
+    height: 35px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: linear-gradient(180deg, #ecbca8, #FE8753);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.bottonchange input {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.bottonchange input:checked+label:after {
+    content: "dev";
+    left: 146px;
+    transform: translateX(-100%);
+    color: white;
+    background: linear-gradient(180deg, #80c996, #558f67);
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h5 {
+    color:#4db36c80;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h5:hover {
+    color: #4DB36B;
+    transition: 0.5s;
+}
+
+.PAGE1::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(-250deg, #ffffff 30%, rgba(0, 0, 0, 0) 65%) no-repeat;
+    /*gradient*/
+}
+
+.PAGE1 {
+    display: block;
+    height: 100vh;
+}
+
+.PAGE1 video {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    animation: visibility 1s;
+}
+
+@keyframes visibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.HOME {
+    top: 0;
+    position: absolute;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 580px;
+    z-index: 2;
+    transform: scale(0.9);
+    animation: home-to-rigth 1s;
+}
+
+@keyframes home-to-rigth {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.KITODAN h1 {
+    font-size: 72px;
+    font-weight: 300;
+    font-family: 'Poller One', cursive;
+    color: #FE8753;
+    margin: 0px;
+    margin-left: -5px;
+    padding: 0px;
+}
+
+.KITODAN h2 {
+    margin-top: -20px;
+    color: #4DB36B;
+}
+
+.KITODAN h3 {
+    font-size: 24px;
+    color: #4DB36B;
+    margin-top: 30px;
+}
+
+.KITODAN p {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    max-width: 100%;
+    color: #0178AC;
+}
+
+.SKILLS h3 {
+    margin-top: 40px;
+    font-size: 24px;
+    color: #4DB36B;
+}
+
+.skill h4 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    color: #0178AC;
+    font-size: 16px;
+}
+
+.progress-bar {
+    background: #4db36c2a;
+    width: 580px;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    height: 8px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.after-effects {
+    background: #FE8753;
+    animation: after-effects 1s linear forwards;
+}
+
+.after-effects2 {
+    background: #297BB3;
+    animation: after-effects2 1s linear forwards;
+}
+
+.illustrator {
+    background: #FE8753;
+    animation: illustrator 1.1s linear forwards;
+}
+
+.illustrator2 {
+    background: #297BB3;
+    animation: illustrator2 1.1s linear forwards;
+}
+
+.photoshop {
+    background: #FE8753;
+    animation: photoshop 1.2s linear forwards;
+}
+
+.photoshop2 {
+    background: #297BB3;
+    animation: photoshop2 1.2s linear forwards;
+}
+
+.blender3d {
+    background: #FE8753;
+    animation: blender3d 1.2s linear forwards;
+}
+
+.blender3d2 {
+    background: #297BB3;
+    animation: blender3d2 1s linear forwards;
+}
+
+/*ANIMATION - PROGRESS BAR*/
+
+@keyframes after-effects {
+    100% {
+        width: 97%;
+    }
+}
+
+@keyframes after-effects2 {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes illustrator {
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes illustrator2 {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes photoshop {
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes photoshop2 {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blender3d {
+    100% {
+        width: 88%;
+    }
+}
+
+@keyframes blender3d2 {
+    100% {
+        width: 100%;
+    }
+}
+
+/*ANIMATION - PROGRESS BAR*/
+
+#more {
+    color: #2e88af;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#myForm {
+    margin-top: 50px;
+    color: #297BB3;
+    width: 580px;
+}
+
+label {
+    margin: 5px;
+}
+
+input[type="text"] {
+    color: #297BB3;
+    border: 1px solid #297cb372;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input[type="text"]:hover {
+    border-color: #4db36c8e;
+}
+
+.whatsappme button {
+    background: linear-gradient(180deg, #ffa57e, #FE8753);
+    display: flex;
+    justify-content: center;
+    width: 580px;
+    height: 100px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 20px;
+    animation: buttonup 1.5s;
+}
+
+@keyframes buttonup {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.whatsappme h3 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+#whatsapp-btn img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.whatsappme button:hover {
+    background: linear-gradient(180deg, #4DB36B, #3d8e55);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.buttons h4 {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #297BB3;
+}
+
+.social-logos {
+    margin-left: -5px;
+    margin-top: 00px;
+    display: inline-block;
+}
+
+.social-logos li {
+    display: inline;
+    padding: 5px;
+}
+
+.social-logos img {
+    width: 48px;
+    height: 48px;
+}
+
+.social-logos button {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.social-logos button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}

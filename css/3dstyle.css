@@ -1,0 +1,27 @@
+body {
+    touch-action: pan-left, pan-right, pan-up, pan-down;
+}
+canvas {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    top: 10%;
+    right: 8%;
+    width: 50vw !important;
+    height: 50vw !important;
+    clip-path: circle(calc(50% - 1px));
+    opacity: 80;
+    animation: ballapear 1s;
+}
+
+@keyframes ballapear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 80;
+    }
+}

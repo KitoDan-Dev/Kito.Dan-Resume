@@ -1,0 +1,175 @@
+@media (max-width: 1200px) {
+    body {
+        overflow: visible;
+        overflow-x: hidden;
+        background-color: #ffffff;
+    }
+
+    .PAGE1::after {
+        top: 0;
+        position: absolute;
+        object-position: cover;
+        min-height: 50vh;
+        height: 50%;
+        width: 100vw;
+        background: linear-gradient(180deg, #ffffff00 60%, rgb(255, 255, 255) 95%) no-repeat;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .PAGE1 video {
+        top: 0;
+        object-position: right;
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        background-color: #ffffff;
+    }
+
+    .HOME {
+        margin-top: -40px;
+        padding-top: 0px;
+        position: relative;
+        min-height: 90vh;
+        max-width: 90vw;
+        padding-right: 5%;
+        justify-content: flex-start;
+        transform: scale(0.9);
+        animation: home-to-rigth 1s;
+    }
+
+    @keyframes home-to-rigth {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(0.9);
+        }
+    }
+
+    .KITODAN {
+        width: 580px;
+    }
+
+    .KITODAN h1 {
+        font-size: 46px;
+    }
+
+    .KITODAN h2 {
+        font-size: 20px;
+        margin-top: -12px;
+    }
+
+    .KITODAN h3 {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .KITODAN p {
+        max-width: 85vw;
+        font-size: 14px;
+    }
+
+    .SKILLS h3 {
+        font-size: 18px;
+    }
+
+    .progress-bar {
+        background: #4db36c2a;
+        max-width: 85vw;
+        height: 5px;
+        border-radius: 5px;
+    }
+
+    .progress-bar div {
+        height: 5px;
+        border-radius: 5px;
+        width: 0%;
+    }
+
+    #myForm {
+        margin-top: 50px;
+        max-width: 85vw;
+    }
+    
+    .whatsappme button {
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .whatsappme h3 {
+        font-size: 22px;
+    }
+
+    #whatsapp-btn {
+        max-width: 85vw;
+        height: 80px;
+        color: white;
+        border: none;
+        align-items: center;
+    }
+
+    #whatsapp-btn img {
+        height: 40px;
+    }
+
+    .social-logos {
+        margin-bottom: 50px;
+        display: inline-block;
+    }
+
+    .social-logos img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .skill h4 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        color: #0178AC;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #myForm {
+        max-width: 85vw;
+    }
+    
+    label {
+        display: block;
+    }
+
+    input {
+        display: block;
+        width: 85vw;
+    }
+
+    .whatsappme button {
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .whatsappme h3 {
+        font-size: 18px;
+    }
+
+    #whatsapp-btn {
+        width: 85vw;
+        height: 80px;
+        color: white;
+        border: none;
+        align-items: center;
+    }
+
+    #whatsapp-btn img {
+        height: 30px;
+    }
+}

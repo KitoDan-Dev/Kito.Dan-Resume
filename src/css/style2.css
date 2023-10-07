@@ -1,4 +1,6 @@
 .PAGE2 {
+    margin: 0;
+    padding: 0;
     display: none;
     height: 100vh;
     background-color: #0f3b59;
@@ -159,7 +161,7 @@
 
 @keyframes javascript1 {
     100% {
-        width: 82%;
+        width: 86%;
     }
 }
 

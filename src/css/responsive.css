@@ -1,6 +1,7 @@
 @media (max-width: 1200px) {
     body {
         overflow: visible;
+        overflow-x: hidden;
         background-color: #ffffff;
     }
 
@@ -10,6 +11,7 @@
         object-position: cover;
         min-height: 50vh;
         height: 50%;
+        width: 100vw;
         background: linear-gradient(180deg, #ffffff00 60%, rgb(255, 255, 255) 95%) no-repeat;
         margin: 0px;
         padding: 0px;
@@ -19,6 +21,7 @@
         top: 0;
         object-position: right;
         height: 50%;
+        width: 100%;
         object-fit: cover;
         background-color: #ffffff;
     }

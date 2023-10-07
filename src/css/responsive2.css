@@ -3,6 +3,7 @@
     .PAGE2 {
         margin: 0;
         padding: 0;
+        width: 100%;
     }
 
     .PAGE2::after {
@@ -17,18 +18,11 @@
     }
 
     .bgblue img {
-        top: 0;
-        object-position: right;
-        height: 40vh;
-        object-fit: cover;
         background-color: #ffffff00;
     }
 
     .bgblue {
-        display: flex;
-        align-items: center;
         height: 30%;
-        object-fit: cover;
         z-index: 0;
         animation: visibility 1s;
     }
@@ -112,6 +106,14 @@
 }
 
 @media (max-width: 768px) {
+    .KITODAN2 {
+        width: 85vw;
+    }
+
+    .bgblue img {
+        width: 85vw;
+    }
+
     #myForm2 {
         max-width: 85vw;
     }

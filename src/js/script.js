@@ -51,29 +51,8 @@ animate();
 function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
-    mesh2.rotation.y -= 0.0009;
+    mesh2.rotation.y -= 0.0018;
     mesh.rotation.y += 0.0009;
-
-    document.addEventListener('mousemove', function (e) {
-
-        e.preventDefault();
-
-        var touchstart = e.type === 'touchstart' || e.type === 'touchmove',
-            e = touchstart ? e.originalEvent : e,
-            pageX = touchstart ? e.targetTouches[0].pageX : e.pageX,
-            pageY = touchstart ? e.targetTouches[0].pageY : e.pageY;
-
-        const pos = (((360 * (e.pageX - window.innerWidth / 2) / window.innerWidth) * Math.PI / 180) / 2) - Math.PI / 2;
-
-        const pos2 = ((360 * (e.pageY - window.innerHeight / 8) / window.innerHeight) * Math.PI / 180) - Math.PI / 2;
-
-        mesh2.rotation.y = -pos - Math.PI;
-        mesh.rotation.y = pos;
-
-        mesh2.rotation.x = pos2 / 10;
-        mesh.rotation.x = pos2 / 10;
-
-    });
 
 }
 };

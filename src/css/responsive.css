@@ -1,7 +1,7 @@
 @media (max-width: 1200px) {
     body {
         overflow: visible;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         background-color: #ffffff;
     }
 

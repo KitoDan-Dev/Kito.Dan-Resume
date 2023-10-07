@@ -17,9 +17,9 @@ camera = new THREE.OrthographicCamera(-10, 10, 10, -10, -10, 10);
 var light = new THREE.DirectionalLight( 0xffffff, 1, 0 );
 light.position.set( 15, 15, 0 );
 
-var texture = new THREE.TextureLoader().load('/src/images/kitodanfrontend_out.png');
+var texture = new THREE.TextureLoader().load('src/images/kitodanfrontend_out.png');
 
-var texture2 = new THREE.TextureLoader().load('/src/images/kitodanfrontend_middle.png');
+var texture2 = new THREE.TextureLoader().load('src/images/kitodanfrontend_middle.png');
 
 var material = new THREE.MeshBasicMaterial({
     map: texture

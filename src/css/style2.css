@@ -52,7 +52,7 @@
     font-size: 72px;
     font-weight: 300;
     font-family: 'Poller One', cursive;
-    color: #80c996;
+    color: #8dd6a7;
     margin: 0px;
     margin-left: -5px;
     padding: 0px;
@@ -103,6 +103,16 @@
     width: 0%;
 }
 
+.wordpress1 {
+    background: #FE8753;
+    animation: wordpress1 1s linear forwards;
+}
+
+.wordpress2 {
+    background: #abe1e8;
+    animation: wordpress2 1s linear forwards;
+}
+
 .html1 {
     background: #FE8753;
     animation: html1 1s linear forwards;
@@ -135,9 +145,21 @@
 
 /*ANIMATION - PROGRESS BAR*/
 
+@keyframes wordpress1 {
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes wordpress2 {
+    100% {
+        width: 100%;
+    }
+}
+
 @keyframes html1 {
     100% {
-        width: 90%;
+        width: 75%;
     }
 }
 
@@ -149,7 +171,7 @@
 
 @keyframes css1 {
     100% {
-        width: 95%;
+        width: 85%;
     }
 }
 
@@ -161,7 +183,7 @@
 
 @keyframes javascript1 {
     100% {
-        width: 86%;
+        width: 65%;
     }
 }
 

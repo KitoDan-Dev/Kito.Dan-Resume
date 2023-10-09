@@ -1,59 +1,57 @@
 console.log(THREE);
 
-createball ();
+createball();
 
-function createball () {
-var camera, scene, renderer;
-var image;
+function createball() {
+    var camera, scene, renderer;
 
-renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize(window.innerWidth / 2, window.innerWidth / 2);
-renderer.setPixelRatio(2);
-document.body.appendChild(renderer.domElement);
+    renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setSize(window.innerWidth / 2, window.innerWidth / 2);
+    renderer.setPixelRatio(2);
+    document.body.appendChild(renderer.domElement);
 
-scene = new THREE.Scene();
-camera = new THREE.OrthographicCamera(-10, 10, 10, -10, -10, 10);
+    scene = new THREE.Scene();
+    camera = new THREE.OrthographicCamera(-10, 10, 10, -10, -10, 10);
 
-var light = new THREE.DirectionalLight( 0xffffff, 1, 0 );
-light.position.set( 15, 15, 0 );
+    var light = new THREE.DirectionalLight(0xffffff, 100, 100);
+    light.position.set(15, 15, 0);
 
-var texture = new THREE.TextureLoader().load('src/images/kitodanfrontend_out.png');
+    var texture = new THREE.TextureLoader().load('src/images/kitodanfrontend_out.png');
 
-var texture2 = new THREE.TextureLoader().load('src/images/kitodanfrontend_middle.png');
+    var texture2 = new THREE.TextureLoader().load('src/images/kitodanfrontend_middle.png');
 
-var material = new THREE.MeshBasicMaterial({
-    map: texture
-});
+    var material = new THREE.MeshBasicMaterial({
+        map: texture
+    });
 
-var material2 = new THREE.MeshBasicMaterial({
-    map: texture2
-});
+    var material2 = new THREE.MeshBasicMaterial({
+        map: texture2
+    });
 
-material.transparent = true;
-material2.transparent = true;
+    material.transparent = true;
+    material2.transparent = true;
 
-var geometry = new THREE.SphereGeometry(9.9, 50, 50);
-const mesh = new THREE.Mesh(geometry, material);
-var geometry2 = new THREE.SphereGeometry(10, 50, 50);
-const mesh2 = new THREE.Mesh(geometry2, material2);
+    var geometry = new THREE.SphereGeometry(9.9, 50, 50);
+    const mesh = new THREE.Mesh(geometry, material);
+    var geometry2 = new THREE.SphereGeometry(10, 50, 50);
+    const mesh2 = new THREE.Mesh(geometry2, material2);
 
-mesh2.rotation.y = -Math.PI / 2;
-mesh.rotation.y = -Math.PI / 2;
-mesh2.rotation.x = 19.4;
-mesh.rotation.x = 19.4;
+    mesh2.rotation.y = -Math.PI / 2;
+    mesh.rotation.y = -Math.PI / 2;
+    mesh2.rotation.x = 19.4;
+    mesh.rotation.x = 19.4;
 
-scene.add( light );
-scene.add(mesh2);
-scene.add(mesh);
+    scene.add(light);
+    scene.add(mesh2);
+    scene.add(mesh);
 
+    animate();
 
-animate();
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+        mesh2.rotation.y -= 0.0018;
+        mesh.rotation.y += 0.0009;
 
-function animate() {
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-    mesh2.rotation.y -= 0.0018;
-    mesh.rotation.y += 0.0009;
-
-}
+    }
 };

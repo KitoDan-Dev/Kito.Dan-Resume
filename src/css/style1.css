@@ -36,7 +36,7 @@ body {
     height: 40px;
     position: relative;
     display: block;
-    background: #f5f5f5;
+    background: rgb(244, 244, 244);
     border-radius: 10px;
     border: 1px solid;
     border-color: #4db36c8e;
@@ -61,7 +61,7 @@ body {
     align-content: space-around;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: rgb(244, 244, 244);
     text-align: center;
     width: 75px;
     height: 35px;
@@ -81,11 +81,11 @@ body {
 }
 
 .bottonchange input:checked+label:after {
-    content: "dev";
+    content: "web";
     left: 146px;
     transform: translateX(-100%);
-    color: white;
-    background: linear-gradient(180deg, #80c996, #558f67);
+    color: rgb(244, 244, 244);
+    background: linear-gradient(180deg, #8dd6a7, #588969);
 }
 
 .area {
@@ -112,13 +112,14 @@ h5:hover {
     left: 0;
     min-height: 100%;
     width: 100%;
-    background: linear-gradient(-250deg, #ffffff 30%, rgba(0, 0, 0, 0) 65%) no-repeat;
+    background: linear-gradient(-250deg, #f7f7f7 30%, rgba(0, 0, 0, 0) 65%) no-repeat;
     /*gradient*/
 }
 
 .PAGE1 {
-    display: block;
+    display: none;
     height: 100vh;
+    background-color: #f7f7f7;
 }
 
 .PAGE1 video {

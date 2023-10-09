@@ -1,0 +1,278 @@
+.BGKITODAN {
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    width: 100%;
+    opacity: 40%;
+    z-index: 0;
+}
+
+.FirstContent {
+    display: flex;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #215830;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+
+.text_button {
+    height: 50%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1.2);
+}
+
+.RoundDiv {
+    box-shadow: 0px 0px 50px #6fdd90, inset 0px 0px 90px rgba(0, 0, 0, 0.45);
+    background-color: #215830;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    height: 700px;
+    padding: 40px;
+    z-index: 2;
+    animation: changelocation 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.RoundDiv1 {
+    background-color: #21583029;
+    box-shadow: 0px 0px 50px #6fdd90, inset 0px 0px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+    z-index: 1;
+    animation: changelocation 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.RoundDiv2 {
+    background-color: #21583029;
+    box-shadow: 0px 0px 60px #6fdd90f2, inset 0px 0px 50px rgba(0, 0, 0, 0.35);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 950px;
+    height: 950px;
+    z-index: 1;
+    animation: changelocation 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.RoundDiv3 {
+    background-color: #21583029;
+    box-shadow: 0px 0px 70px #6fdd90e3, inset 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1150px;
+    height: 1150px;
+    z-index: 1;
+    animation: changelocation 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.RoundDiv4 {
+    background-color: #21583029;
+    box-shadow: 0px 0px 80px #6fdd90cb, inset 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1400px;
+    height: 1400px;
+    z-index: 1;
+    animation: changelocation 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.RoundDiv5 {
+    background-color: #21583029;
+    box-shadow: 0px 0px 90px #6fdd90b1, inset 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1700px;
+    height: 1700px;
+    z-index: 1;
+    animation: changelocation 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.RoundDiv6 {
+    box-shadow: 0px 0px 100px #6fdd9078, inset 0px 0px 50px rgba(0, 0, 0, 0.1);
+    background-color: #21583029;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -600px;
+    z-index: 1;
+    width: 2050px;
+    height: 2050px;
+
+}
+
+@keyframes changelocation {
+    0% {
+        margin-bottom: -60px;
+    }
+
+    50% {
+        margin-bottom: 60px;
+    }
+
+    100% {
+        margin-bottom: -60px;
+    }
+
+}
+
+.kitodanh1 {
+    font-family: 'Poller One';
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 0px 8px #6fdd90;
+}
+
+.firstline {
+    margin-top: -5px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #6fdd90;
+    text-shadow: 0px 0px 5px #6fdd90;
+}
+
+.secondline {
+    margin-top: -5px;
+    font-family: 'Poller One';
+    text-align: center;
+    font-size: 38px;
+    font-weight: 100;
+    color: #6fdd90;
+    text-shadow: 0px 0px 5px #6fdd90;
+}
+
+.thirdline {
+    color: #6fdd90;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 40px;
+    text-shadow: 0px 0px 5px #6fdd90;
+}
+
+.secondline:hover {
+    color: #fe8653;
+    text-shadow: 0px 0px 5px #fe8653;
+    transition: 0.5s;
+}
+
+.buttonselect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 20px;
+}
+
+.buttonselect button:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.buttonselect button {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 5px;
+    animation: buttonup 1.5s;
+    color: rgb(244, 244, 244);
+    box-shadow: inset 0px -1px 3px rgba(0, 0, 0, 0.5), inset 0px 1px 3px rgb(255, 255, 255, 0.5), -1px 1px 8px rgba(0, 0, 0, 0.325);
+}
+
+.buttonselect h3 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.buttonselect h3:hover {
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#motionbutton {
+    background-color: #fe8653;
+    border-radius: 30px;
+}
+
+#motionbutton:hover {
+    border-radius: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+    background-color: #6fdd90;
+    box-shadow: 0px 0px 10px #6fdd90;
+}
+
+#webbutton {
+    background-color: #fe8653;
+    border-radius: 30px;
+}
+
+#webbutton:hover {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 30px;
+    background-color: #6fdd90;
+    box-shadow: 0px 0px 10px #6fdd90;
+}
+
+.fourthline {
+    margin-top: 10px;
+    color: rgb(111, 221, 144);
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0px 0px 5px #6fdd90;
+}

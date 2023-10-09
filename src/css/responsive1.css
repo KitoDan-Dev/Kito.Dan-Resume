@@ -93,7 +93,7 @@
         margin-top: 50px;
         max-width: 85vw;
     }
-
+    
     .whatsappme button {
         font-size: 12px;
         text-align: center;
@@ -137,17 +137,14 @@
 }
 
 @media (max-width: 768px) {
-    #myForm {
-        max-width: 85vw;
-    }
-
-    label {
-        display: block;
-    }
+    .textform {
+        columns: 2 5vw;
+        gap: 10px;
+        }
 
     input {
-        display: block;
-        width: 85vw;
+        display: inline-block;
+        width: 100%;
     }
 
     .HOME {
@@ -166,8 +163,6 @@
     }
 
     #whatsapp-btn {
-        width: 85vw;
-        height: 80px;
         color: white;
         border: none;
         align-items: center;

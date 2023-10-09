@@ -13,9 +13,10 @@ document.getElementById("motionbutton").addEventListener("click", function (e) {
 });
 
 document.getElementById("webbutton").addEventListener("click", function (e) {
-    console.log('front end button clicked');
+    console.log('Web button clicked');
     const homepage = document.getElementById("FirstContent");
     const page2 = document.getElementById("PAGE2");
+    const body = document.body;
     var checkbox = document.getElementById("MotionOrDev");
 
     checkbox.checked = !checkbox.checked;
@@ -23,6 +24,7 @@ document.getElementById("webbutton").addEventListener("click", function (e) {
     homepage.style.display = "none";
     document.querySelector('canvas').style.visibility = "visible"
     document.querySelector('canvas').style.display = "block"
+    body.style.background = '#0f3b59'
 });
 }
 
@@ -83,7 +85,7 @@ function changepage() {
                 page2.style.display = "none";
                 document.querySelector('canvas').style.display = "hidden"
                 document.querySelector('canvas').style.display = "none"
-                body.style.background = '#fff';
+                body.style.background = '#f7f7f7';
             }
         })
 }

@@ -17,7 +17,7 @@ document.getElementById("webbutton").addEventListener("click", function (e) {
     const homepage = document.getElementById("FirstContent");
     const page2 = document.getElementById("PAGE2");
     const body = document.body;
-    var checkbox = document.getElementById("MotionOrDev");
+    const checkbox = document.getElementById("MotionOrDev");
 
     checkbox.checked = !checkbox.checked;
     page2.style.display = "block";

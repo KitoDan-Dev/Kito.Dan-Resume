@@ -61,7 +61,7 @@
     }
 
     .text_button {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 
     .RoundDiv {
@@ -69,75 +69,43 @@
         height: 350px;
         padding: 10px;
         z-index: 2;
-        animation: changelocation1 60s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
     }
 
     .RoundDiv1 {
         width: 450px;
         height: 450px;
         z-index: 1;
-        animation: changelocation1 60s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
     }
 
     .RoundDiv2 {
         width: 600px;
         height: 600px;
         z-index: 1;
-        animation: changelocation1 60s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
     }
 
     .RoundDiv3 {
         width: 800px;
         height: 800px;
         z-index: 1;
-        animation: changelocation1 60s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
     }
 
     .RoundDiv4 {
         width: 1095px;
         height: 1095px;
         z-index: 1;
-        animation: changelocation1 60s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
     }
 
     .RoundDiv5 {
         width: 1350px;
         height: 1350px;
-        animation: changelocation1 60s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
     }
 
     .RoundDiv6 {
         margin-left: 0px;
         z-index: 1;
+        margin-top: -50px;
         width: 1700px;
         height: 1700px;
-    }
-
-    @keyframes changelocation1 {
-        0% {
-            margin-bottom: -40px;
-        }
-
-        50% {
-            margin-bottom: 40px;
-        }
-
-        100% {
-            margin-bottom: -40px;
-        }
-
     }
 
     .kitodanh1 {

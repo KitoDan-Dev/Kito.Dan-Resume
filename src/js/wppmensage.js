@@ -1,9 +1,6 @@
 const form = document.getElementById("myForm");
 const form2 = document.getElementById("myForm2");
 
-
-
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const nameobj = document.getElementById("name").value;

@@ -39,11 +39,13 @@
     flex-direction: column;
     width: 700px;
     height: 700px;
+    transform-origin: 0 0;
     padding: 40px;
     z-index: 2;
-    animation: changelocation 60s;
+    animation: changelocation 5s;
+    animation-delay: -3s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
 
 .RoundDiv1 {
@@ -54,12 +56,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transform-origin: 0 0;
     width: 800px;
     height: 800px;
     z-index: 1;
-    animation: changelocation 60s;
+    animation: changelocation 5s;
+    animation-delay: -2.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
 
 .RoundDiv2 {
@@ -70,12 +74,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transform-origin: 0 0;
     width: 950px;
     height: 950px;
     z-index: 1;
-    animation: changelocation 60s;
+    animation: changelocation 5s;
+    animation-delay: -2s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
+
 }
 
 .RoundDiv3 {
@@ -89,9 +96,10 @@
     width: 1150px;
     height: 1150px;
     z-index: 1;
-    animation: changelocation 60s;
+    animation: changelocation 5s;
+    animation-delay: -1.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
 
 .RoundDiv4 {
@@ -105,9 +113,10 @@
     width: 1400px;
     height: 1400px;
     z-index: 1;
-    animation: changelocation 60s;
+    animation: changelocation 5s;
+    animation-delay: -1s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
 
 .RoundDiv5 {
@@ -121,9 +130,10 @@
     width: 1700px;
     height: 1700px;
     z-index: 1;
-    animation: changelocation 60s;
+    animation: changelocation 5s;
+    animation-delay: -0.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
 
 .RoundDiv6 {
@@ -138,22 +148,27 @@
     z-index: 1;
     width: 2050px;
     height: 2050px;
-
+    animation: changelocation 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes changelocation {
     0% {
-        margin-bottom: -60px;
+        transform: scale(1.02);
     }
-
+    25%{
+        transform: scale(.99);
+    }
     50% {
-        margin-bottom: 60px;
+        transform: scale(.97);
     }
-
+    75%{
+        transform: scale(1);
+    }
     100% {
-        margin-bottom: -60px;
+        transform: scale(1.02);
     }
-
 }
 
 .kitodanh1 {

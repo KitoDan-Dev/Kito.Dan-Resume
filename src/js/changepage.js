@@ -6,22 +6,22 @@ changepage()
 function pageselect () {
 document.getElementById("motionbutton").addEventListener("click", function (e) {
     console.log('motion button clicked');
-    const homepage = document.getElementById("FirstContent");
+    const homePage = document.getElementById("FirstContent");
     const page1 = document.getElementById("PAGE1");
     page1.style.display = "block";
-    homepage.style.display = "none";
+    homePage.style.display = "none";
 });
 
 document.getElementById("webbutton").addEventListener("click", function (e) {
     console.log('Web button clicked');
-    const homepage = document.getElementById("FirstContent");
+    const homePage = document.getElementById("FirstContent");
     const page2 = document.getElementById("PAGE2");
     const body = document.body;
     const checkbox = document.getElementById("MotionOrDev");
 
     checkbox.checked = !checkbox.checked;
     page2.style.display = "block";
-    homepage.style.display = "none";
+    homePage.style.display = "none";
     document.querySelector('canvas').style.visibility = "visible"
     document.querySelector('canvas').style.display = "block"
     body.style.background = '#0f3b59'
@@ -29,20 +29,20 @@ document.getElementById("webbutton").addEventListener("click", function (e) {
 }
 
 function textclick() {
-    var checkbox = document.getElementById("MotionOrDev");
+    var checkBox = document.getElementById("MotionOrDev");
 
     document.getElementById("changearea").addEventListener("click", function () {
-        checkbox.checked = !checkbox.checked;
+        checkBox.checked = !checkBox.checked;
 
         console.log('Checkbox state changed!');
 
-        const checkbutton = document.getElementById('MotionOrDev');
+        const checkButton = document.getElementById('MotionOrDev');
         const page1 = document.getElementById("PAGE1");
         const page2 = document.getElementById("PAGE2");
         const body = document.body;
-        const checkbuttonValue = checkbutton.checked;
+        const checkButtonValue = checkButton.checked;
 
-        if (checkbuttonValue === true) {
+        if (checkButtonValue === true) {
             page1.style.display = "none";
             page2.style.display = "block";
             document.querySelector('canvas').style.visibility = "visible"
@@ -67,13 +67,13 @@ function changepage() {
 
             console.log('Checkbox state changed!');
 
-            const checkbutton = document.getElementById('MotionOrDev');
+            const checkButton = document.getElementById('MotionOrDev');
             const page1 = document.getElementById("PAGE1");
             const page2 = document.getElementById("PAGE2");
             const body = document.body;
-            const checkbuttonValue = checkbutton.checked;
+            const checkButtonValue = checkButton.checked;
 
-            if (checkbuttonValue === true) {
+            if (checkButtonValue === true) {
                 page1.style.display = "none";
                 page2.style.display = "block";
                 document.querySelector('canvas').style.visibility = "visible"

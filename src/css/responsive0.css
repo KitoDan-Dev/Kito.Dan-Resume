@@ -10,7 +10,7 @@
     }
 
     .text_button {
-        transform: scale(1.1);
+        transform: scale(1);
     }
 
     .RoundDiv {
@@ -61,7 +61,7 @@
     }
 
     .text_button {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 
     .RoundDiv {
@@ -108,9 +108,16 @@
         height: 1100px;
     }
 
+    .photoKito {
+        margin-top: -10px;
+        width: 180px;
+        align-self: center;
+    }
+
     .kitodanh1 {
         font-size: 42px;
         font-weight: 700;
+        margin-top: -60px;
         color: white;
         text-shadow: 0px 0px 8px #6fdd90;
     }

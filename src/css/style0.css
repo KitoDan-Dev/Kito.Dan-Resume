@@ -176,23 +176,31 @@
     }
 }
 
+.photoKito {
+    margin-top: -40px;
+    width: 250px;
+    align-self: center;
+}
+
 .kitodanh1 {
     font-family: 'Poller One';
     text-align: center;
     font-size: 56px;
     font-weight: 700;
+    margin-top: -82px;
     color: white;
     text-shadow: 0px 0px 8px #6fdd90;
 }
 
 .firstline {
-    margin-top: -5px;
+    margin-top: 0px;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
     letter-spacing: 2px;
     color: #6fdd90;
     text-shadow: 0px 0px 5px #6fdd90;
+    animation: none;
 }
 
 .secondline {
@@ -203,6 +211,7 @@
     font-weight: 100;
     color: #6fdd90;
     text-shadow: 0px 0px 5px #6fdd90;
+    animation: none;
 }
 
 .thirdline {
@@ -212,6 +221,7 @@
     font-weight: 300;
     margin-top: 40px;
     text-shadow: 0px 0px 5px #6fdd90;
+    animation: none;
 }
 
 .secondline:hover {

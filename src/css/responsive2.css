@@ -138,3 +138,13 @@
         height: 30px;
     }
 }
+
+@media (max-width: 440px) {
+    .KITODAN2 h1 {
+        margin-top: -5px;
+    }
+
+    .KITODAN2 h3 {
+        margin-top: 15px;
+    }
+}

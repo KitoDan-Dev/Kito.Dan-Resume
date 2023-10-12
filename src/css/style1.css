@@ -165,12 +165,26 @@ h5:hover {
     }
 }
 
+.title {
+    columns: 2;
+    display: flex;
+    align-items: center;
+}
+
+.title1 {
+    margin-left: 10px;
+}
+
+#PhotoPage {
+    width: 120px;
+}
+
 .KITODAN h1 {
-    font-size: 72px;
+    font-size: 62px;
     font-weight: 300;
     font-family: 'Poller One', cursive;
     color: #FE8753;
-    margin: 0px;
+    margin-top: 20px;
     margin-left: -5px;
     padding: 0px;
 }
@@ -183,7 +197,7 @@ h5:hover {
 .KITODAN h3 {
     font-size: 24px;
     color: #4DB36B;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .KITODAN p {
@@ -197,17 +211,18 @@ h5:hover {
 }
 
 .SKILLS h3 {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 24px;
     color: #4DB36B;
 }
 
 .skill h4 {
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    color: #0178AC;
     font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: #0178AC;
+    
 }
 
 .progress-bar {
@@ -322,7 +337,7 @@ h5:hover {
 }
 
 #myForm {
-    margin-top: 50px;
+    margin-top: 30px;
     color: #297BB3;
     width: 580px;
 }
@@ -386,7 +401,7 @@ input[type="text"]:hover {
 }
 
 .buttons h4 {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 5px;
     font-size: 14px;
     color: #297BB3;

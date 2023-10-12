@@ -49,11 +49,12 @@
 }
 
 .KITODAN2 h1 {
-    font-size: 72px;
+    font-size: 62px;
     font-weight: 300;
     font-family: 'Poller One', cursive;
     color: #8dd6a7;
     margin: 0px;
+    margin-top: 20px;
     margin-left: -5px;
     padding: 0px;
 }
@@ -66,7 +67,7 @@
 .KITODAN2 h3 {
     font-size: 24px;
     color: #FE8753;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .KITODAN2 p {
@@ -80,13 +81,16 @@
 }
 
 .SKILLS2 h3 {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 24px;
     color: #FE8753;
 }
 
 .skill2 h4 {
-    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 5px;
     color: #abe1e8;
 }
 
@@ -196,7 +200,7 @@
 /*ANIMATION - PROGRESS BAR*/
 
 #myForm2 {
-    margin-top: 50px;
+    margin-top: 60px;
     color: #abe1e8;
     width: 580px;
 }
@@ -245,7 +249,7 @@
 }
 
 .buttons2 h4 {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 5px;
     font-size: 14px;
     color: #abe1e8;
